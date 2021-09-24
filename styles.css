@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0;
+}
+
+
+html,
+body {
+    font-size: 20px;
+    font-family: 'Hind Siliguri',
+        sans-serif;
+    font-weight: 400;
+    color: #2c2727;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    background-color: black;
+}
+
+p {
+    font-size: 1rem;
+    color: #554e4e;
+    padding: 0.3rem 0;
+    margin-bottom: .2rem;
+}
+
+ul {
+    padding: 0.3rem 1rem;
+}
+
+.block_heading {
+    font-size: 1.4rem;
+    padding: 0.3rem 0;
+}
+
+
+/* header */
+header {
+    width: 100%;
+    padding: 1.1rem 2rem;
+    background-color: #4e4eee;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 0.3fr auto;
+    place-items: flex-end center;
+}
+
+header .left-block img {
+    border-radius: 5px;
+}
+
+header .right-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+}
+
+header .right-block h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+header .right-block h2 {
+    font-size: 1.4rem;
+}
+
+header .right-block .special-info,
+header .right-block .special-info a {
+    font-size: 1rem;
+    color: #eaedee;
+}
+
+header .right-block a {
+    color: #fff;
+}
+
+/* main */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+    padding: 2rem;
+}
+
+.main__block {
+    padding: 0.2rem 0.6rem;
+    margin: 0.2rem;
+}
+
+/* footer */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 2rem;
+    background-color: #eaf4fa;
+    color: #1e1e69;
+}
+
+footer .footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .footer__content h2 {
+    color: #2c2727;
+}
+
+footer .footer__content a {
+    color: #1e1e69;
+}
+
+@media screen and (max-width:768px) {
+    p {
+        font-size: 0.8rem;
+        padding: 0.3rem 0;
+    }
+
+    .block_heading {
+        font-size: 1.2rem;
+    }
+
+    /* header */
+    header {
+        padding: 1.1rem 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    header .right-block h1 {
+        font-size: 1.6rem;
+    }
+
+    header .right-block h2 {
+        font-size: 1.2rem;
+    }
+
+    header .right-block .special-info,
+    header .right-block .special-info a {
+        font-size: 0.8rem;
+    }
+
+    /* main */
+    main {
+        grid-template-columns: 1fr;
+        place-items: center;
+        grid-gap: 1rem;
+        padding: 1.2rem;
+    }
+
+    .main__block {
+        padding: 0.2rem 0.4rem;
+    }
+
+    /* footer */
+    footer {
+        grid-template-columns: 1fr;
+        padding: 1.2rem;
+    }
+
+    footer iframe {
+        width: 90vw;
+    }
+}
